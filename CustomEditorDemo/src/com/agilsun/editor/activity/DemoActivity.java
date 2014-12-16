@@ -1,9 +1,6 @@
 
 package com.agilsun.editor.activity;
 
-import com.agilsun.editor.customview.CustomEditText;
-import com.agilsun.editor.customview.CustomEditText.EventBack;
-
 import hu.scythe.droidwriter.R;
 import yuku.ambilwarna.AmbilWarnaDialog;
 import yuku.ambilwarna.AmbilWarnaDialog.OnAmbilWarnaListener;
@@ -17,9 +14,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ToggleButton;
 
-public class TestActivity extends Activity implements OnAmbilWarnaListener {
+import com.agilsun.editor.customview.CustomEditText;
+import com.agilsun.editor.customview.CustomEditText.EventBack;
+
+public class DemoActivity extends Activity implements OnAmbilWarnaListener {
     private LinearLayout lnl;
-    private CustomEditText dwEdit;
+    private CustomEditText customEditor;
     private AmbilWarnaDialog colorPickerDialog;
     private ImageView imgChangeColor;
     
@@ -42,7 +42,7 @@ public class TestActivity extends Activity implements OnAmbilWarnaListener {
 
         @Override
         public void onClick(View v) {
-            if (dwEdit.isFocused()) {
+            if (customEditor.isFocused()) {
                 lnl.setVisibility(View.VISIBLE);
             }
         }
@@ -52,7 +52,7 @@ public class TestActivity extends Activity implements OnAmbilWarnaListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.layout);
 
         colorPickerDialog = new AmbilWarnaDialog(this, Color.BLACK, this);
         ToggleButton boldToggle = (ToggleButton) findViewById(R.id.btnBold);
@@ -62,13 +62,13 @@ public class TestActivity extends Activity implements OnAmbilWarnaListener {
         lnl = (LinearLayout) findViewById(R.id.lnlAction);
         lnl.setVisibility(View.VISIBLE);
 
-        dwEdit = (CustomEditText) findViewById(R.id.DwEdit);
-        dwEdit.setSingleLine(false);
-        dwEdit.setMinLines(10);
-        dwEdit.setBoldToggleButton(boldToggle);
-        dwEdit.setItalicsToggleButton(italicsToggle);
-        dwEdit.setUnderlineToggleButton(underlinedToggle);
-        dwEdit.setOnFocusChangeListener(new OnFocusChangeListener() {
+        customEditor = (CustomEditText) findViewById(R.id.CustomEditor);
+        customEditor.setSingleLine(false);
+        customEditor.setMinLines(10);
+        customEditor.setBoldToggleButton(boldToggle);
+        customEditor.setItalicsToggleButton(italicsToggle);
+        customEditor.setUnderlineToggleButton(underlinedToggle);
+        customEditor.setOnFocusChangeListener(new OnFocusChangeListener() {
 
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -81,14 +81,14 @@ public class TestActivity extends Activity implements OnAmbilWarnaListener {
                 }
             }
         });
-        dwEdit.setEventBack(eventBack);
-        dwEdit.setOnClickListener(clickListener);
+        customEditor.setEventBack(eventBack);
+        customEditor.setOnClickListener(clickListener);
         imgChangeColor.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                selectionStart = dwEdit.getSelectionStart();
-                selectionEnd = dwEdit.getSelectionEnd();
+                selectionStart = customEditor.getSelectionStart();
+                selectionEnd = customEditor.getSelectionEnd();
                 colorPickerDialog.show();
             }
         });
@@ -102,7 +102,7 @@ public class TestActivity extends Activity implements OnAmbilWarnaListener {
 
     @Override
     public void onOk(AmbilWarnaDialog dialog, int color) {
-        dwEdit.setColor(color, selectionStart, selectionEnd);
+        customEditor.setColor(color, selectionStart, selectionEnd);
         imgChangeColor.setBackgroundColor(color);
     }
 }

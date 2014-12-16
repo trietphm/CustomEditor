@@ -10,7 +10,7 @@
         android:layout_alignParentTop="true" >
 
         <com.agilsun.editor.customview.CustomEditText
-            android:id="@+id/DwEdit"
+            android:id="@+id/CustomEditor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top"
