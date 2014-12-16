@@ -3,7 +3,7 @@ CustomEditor
 
 A custom editor for Android.
 
-The color picker is from here: https://code.google.com/p/android-color-picker/
+The color picker library is from here: https://code.google.com/p/android-color-picker/
 
     
 ## Setup
