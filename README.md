@@ -1,9 +1,9 @@
 CustomEditor
 ============
 
-A custom editor for Android.
+A custom editor for Android. You can set Bold, Italic, Underline and Color.
 
-The color picker library is from here: https://code.google.com/p/android-color-picker/
+The color picker library is AmbilWarna and you can find it here: https://code.google.com/p/android-color-picker/
 
     
 ## Setup
