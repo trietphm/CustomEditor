@@ -8,6 +8,10 @@ A custom editor for Android. You can set Bold, Italic, Underline and Color.
 The color picker library is AmbilWarna and you can find it here: https://code.google.com/p/android-color-picker/
 or here https://github.com/yukuku/ambilwarna
 
+## Screen shot
+==============
+
+
 ## Setup
 ### For Eclipse user
 Import to Eclipse
@@ -35,14 +39,14 @@ dependencies {
 ## How to use?
 **Step 1:** Add CustomEditor view element in your layout.xml
 ```XML
-<com.agilsun.editor.customview.CustomEditText
+<windyzboy.github.io.customeeditor.CustomEditText
             android:id="@+id/CustomEditor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top"
             android:inputType="textFilter|textMultiLine|textNoSuggestions"
             android:minLines="10" >
-</com.agilsun.editor.customview.CustomEditText>
+</windyzboy.github.io.customeeditor.CustomEditText>
 ```
 
 **Step 2:** Get the Object and use it as an EditText (CustomEditor extends from EditText)
@@ -50,6 +54,6 @@ dependencies {
 CustomEditText customEditor = (CustomEditText) findViewById(R.id.CustomEditor);
 ```
 
-**Step 3:** There is a demo in CustomEditorDemo project, see it for more detail.
+There is a demo in folder Demo (Android Studio) or Eclipse project/CustomEditorDemo (Eclipse), see it for more detail.
 
 ## Have fun.
