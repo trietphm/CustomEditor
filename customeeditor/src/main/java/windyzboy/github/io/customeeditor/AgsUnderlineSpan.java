@@ -1,4 +1,4 @@
-package windyzboy.github.io.customeditor;
+package windyzboy.github.io.customeeditor;
 
 import android.os.Parcel;
 import android.text.ParcelableSpan;

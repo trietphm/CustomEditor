@@ -1,4 +1,4 @@
-package windyzboy.github.io.customeditor;
+package windyzboy.github.io.customeeditor;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

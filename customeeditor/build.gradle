@@ -1,11 +1,11 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
+apply plugin: 'android-maven'
 
 android {
     compileSdkVersion 22
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "windyzboy.github.io.customeditor"
         minSdkVersion 10
         targetSdkVersion 22
         versionCode 1

@@ -1,4 +1,4 @@
-package windyzboy.github.io.customeditor;
+package windyzboy.github.io.customeeditor;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -20,6 +20,9 @@ import android.widget.EditText;
 import android.widget.ToggleButton;
 
 public class CustomEditText extends EditText {
+
+    // Log tag
+    public static final String TAG = "DroidWriter";
 
     // Style constants
     private static final int STYLE_BOLD = 0;
