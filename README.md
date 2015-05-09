@@ -8,9 +8,9 @@ A custom editor for Android. You can set Bold, Italic, Underline and Color.
 The color picker library is AmbilWarna and you can find it here: https://code.google.com/p/android-color-picker/
 or here https://github.com/yukuku/ambilwarna
 
-## Screen shot
-==============
-
+Screen shot
+<img src='http://s12.postimg.org/w499omo65/Screenshot_2015_05_09_23_07_56.png'>
+<img src='http://s12.postimg.org/mz0wurkrh/Screenshot_2015_05_09_23_10_54.png'>
 
 ## Setup
 ### For Eclipse user
