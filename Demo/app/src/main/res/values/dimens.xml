@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="action_button_width">48dip</dimen>
+    <dimen name="action_button_height">42dip</dimen>
+
+    <dimen name="layout_padding_very_small">4dp</dimen>
+    <dimen name="layout_padding_small">8dp</dimen>
+    <dimen name="layout_padding_medium">16dp</dimen>
+    <dimen name="layout_padding_large">24dp</dimen>
+
+    <dimen name="layout_margin_very_small">4dp</dimen>
+    <dimen name="layout_margin_small">8dp</dimen>
+    <dimen name="layout_margin_medium">16dp</dimen>
+    <dimen name="layout_margin_large">24dp</dimen>
+
+</resources>

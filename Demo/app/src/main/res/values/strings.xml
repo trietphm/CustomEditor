@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CustomEditor</string>
+    <string name="colorButton">A</string>
+    <string name="title">Android Custom Editor</string>
+    <string name="hint">Type some awesome here</string>
+    <string name="link">https://github.com/windyzboy/CustomEditor</string>
+
+</resources>

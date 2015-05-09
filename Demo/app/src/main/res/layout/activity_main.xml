@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollViewEditor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lnlAction"
+        android:layout_below="@+id/textViewTitle">
+
+        <windyzboy.github.io.customeeditor.CustomEditText
+            android:id="@+id/CustomEditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:inputType="textFilter|textMultiLine|textNoSuggestions"
+            android:minLines="10">
+
+            <requestFocus />
+        </windyzboy.github.io.customeeditor.CustomEditText>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/link"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/scrollViewEditor"
+        android:id="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/lnlAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gainsboro"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/btnBold"
+            android:layout_width="@dimen/action_button_height"
+            android:layout_height="@dimen/action_button_height"
+            android:background="@drawable/selector_bold_button"
+            android:textOff=""
+            android:textOn=""
+            android:textStyle="bold" />
+
+        <ToggleButton
+            android:id="@+id/btnItalics"
+            android:layout_width="@dimen/action_button_height"
+            android:layout_height="@dimen/action_button_height"
+            android:background="@drawable/selector_italic_button"
+            android:textOff=""
+            android:textOn=""
+            android:textStyle="italic" />
+
+        <ToggleButton
+            android:id="@+id/btnUnderline"
+            android:layout_width="@dimen/action_button_height"
+            android:layout_height="@dimen/action_button_height"
+            android:background="@drawable/selector_underline_button"
+            android:textOff=""
+            android:textOn="" />
+
+        <ImageView
+            android:id="@+id/btnChangeTextColor"
+            android:layout_width="@dimen/action_button_height"
+            android:layout_height="@dimen/action_button_height"
+            android:background="@android:color/black"
+            android:contentDescription="@null"
+            android:src="@mipmap/button_color" />
+    </LinearLayout>
+
+
+</RelativeLayout>
