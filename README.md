@@ -3,7 +3,7 @@ CustomEditor
 
 [![Release](https://img.shields.io/github/release/windyzboy/CustomEditor.svg?label=JitPack%20Maven)](https://jitpack.io/#windyzboy/CustomEditor/v1.0.1)
 
-A custom editor for Android. You can set Bold, Italic, Underline and Color.
+A custom editor for Android - a simple WYSIWYG. You can set Bold, Italic, Underline and Color.
 
 The color picker library is AmbilWarna and you can find it here: https://code.google.com/p/android-color-picker/
 or here https://github.com/yukuku/ambilwarna
