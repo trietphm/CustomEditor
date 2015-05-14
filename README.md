@@ -38,7 +38,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:1.0.2'
+    compile 'com.github.windyzboy:CustomEditor:v1.0.1'
 }
 ```
 
