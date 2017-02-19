@@ -38,7 +38,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.windyzboy:CustomEditor:v1.0.1'
+    compile 'com.github.trietphm:CustomEditor:v1.0.1'
 }
 ```
 
